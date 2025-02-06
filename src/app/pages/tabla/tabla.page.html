@@ -3,14 +3,36 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Tabla</ion-title>
+    <ion-title>Tabla de Multiplicar</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tabla</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="tabla-container">
+    <!-- Título -->
+    <h2>Calcula la Tabla de Multiplicar</h2>
+
+    <!-- Campo para el Número -->
+    <ion-item class="input-item">
+      <ion-label position="floating">Ingresa un número</ion-label>
+      <ion-input type="number" [(ngModel)]="numero"></ion-input>
+    </ion-item>
+
+    <!-- Botón para Calcular -->
+    <ion-button expand="block" class="calculate-button" (click)="generarTabla()">
+      Generar Tabla
+    </ion-button>
+
+    <!-- Resultado -->
+    <ion-card class="result-card" *ngIf="tabla.length > 0">
+      <ion-card-header>
+        <ion-card-title>Resultado</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ul>
+          <li *ngFor="let linea of tabla">{{ linea }}</li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
