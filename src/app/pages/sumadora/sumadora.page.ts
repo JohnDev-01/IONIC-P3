@@ -6,11 +6,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sumadora.page.html',
   styleUrls: ['./sumadora.page.scss'],
 })
-export class SumadoraPage implements OnInit {
+export class SumadoraPage {
+  numero1: number | null = null;
+  numero2: number | null = null;
+  resultado: number | null = null;
 
-  constructor() { }
-
-  ngOnInit() {
+  calcularSuma() {
+    if (this.numero1 !== null && this.numero2 !== null) {
+      this.resultado = this.numero1 + this.numero2;
+    }
   }
-
 }

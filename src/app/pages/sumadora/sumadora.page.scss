@@ -1,0 +1,53 @@
+.sumadora-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+  height: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3880ff;
+  margin-bottom: 20px;
+}
+
+.input-item {
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.sum-button {
+  width: 90%;
+  max-width: 400px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #3880ff, #4caf50);
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.result-card {
+  width: 90%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+ion-card-title {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+ion-card-content p {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 0;
+}
