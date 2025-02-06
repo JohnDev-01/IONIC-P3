@@ -9,21 +9,16 @@
 
 <ion-content>
   <div class="traductor-container">
-    <!-- Título -->
     <h2>Traductor de Números a Letras</h2>
 
-    <!-- Campo para el Número -->
     <ion-item class="input-item">
       <ion-label position="floating">Ingresa un número</ion-label>
       <ion-input type="number" [(ngModel)]="numero"></ion-input>
     </ion-item>
 
-    <!-- Botón para Traducir -->
     <ion-button expand="block" class="translate-button" (click)="convertirNumero()">
       Traducir
     </ion-button>
-
-    <!-- Resultado -->
     <ion-card class="result-card" *ngIf="resultado !== ''">
       <ion-card-header>
         <ion-card-title>Resultado</ion-card-title>

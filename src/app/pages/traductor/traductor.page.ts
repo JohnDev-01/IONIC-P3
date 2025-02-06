@@ -73,7 +73,6 @@ export class TraductorPage {
 
     let letras = '';
 
-    // Dividir en grupos de miles
     const grupos = [];
     while (numero > 0) {
       grupos.push(numero % 1000);
